@@ -1,0 +1,342 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Roboto',
+    sans-serif;
+  overflow-y: scroll;
+}
+
+
+body {
+  margin: 0;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 300;
+  margin-top: 1px;
+  margin-bottom: 3px;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bg-wallpaper {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(138, 34, 34);
+  background-image: url(../pages/photo/libra-justice-balanced-scale-symbol.png), url(../pages/photo/animfon.jpg);
+  background-size: 90px, cover;
+  background-repeat: no-repeat;
+  background-position: 97% 45%, center;
+
+}
+
+.bg-overlay {
+  background-color: rgb(96, 6, 6);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  opacity: 0.7;
+}
+
+.container {
+  max-width: 1280px;
+  padding: 20px;
+  margin: auto;
+}
+
+.navbar-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-item {
+  list-style: none;
+  background-color: whitesmoke;
+  padding: 5px;
+  margin: 5px;
+  border: solid 3px black;
+}
+
+.navbar-link {
+  border: 2px solid brown;
+  padding: 1em;
+  display: block;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: brown;
+}
+
+.navbar-item:hover {
+  background-color: pink;
+  transition: 0.5s;
+  transform: translate(5px, -2px);
+  border: solid 3px rgb(240, 10, 160);
+  background-color: rgb(50, 213, 99);
+}
+
+.content {
+  background-color: white;
+  margin-bottom: 100px;
+  margin-top: 160px;
+  color: rgb(0, 0, 0);
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.foter {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  background-color: rgb(243, 74, 18);
+  color: blue;
+}
+
+.header {
+  background-color: rgb(243, 74, 18);
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  color: brown;
+}
+
+.h1-articles {
+  text-align: center;
+}
+
+.p-articles::first-letter {
+  color: crimson;
+  font-size: 20px;
+  font-weight: 900;
+  float: left;
+  border: 1px solid rgb(223, 150, 61);
+  background-color: rgb(147, 216, 240);
+  padding: 2px;
+  margin-right: 3px;
+}
+
+.new-articles-comment {
+  color: rgb(155, 155, 86)
+}
+
+.new-articles-comment:hover {
+  color: darkorchid;
+}
+
+.new-articles-read {
+  color: rgb(64, 110, 138);
+  font-weight: 400;
+  transition: 0.5s;
+}
+
+.new-articles-read:hover {
+  color: brown;
+}
+
+.new-articles-link {
+  border-bottom: 1px solid rgb(243, 74, 18);
+  color: rgb(0, 0, 255);
+}
+
+.new-articles {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+}
+
+.new::after {
+  content: "new";
+  background: rgb(255, 0, 212);
+  color: rgb(255, 255, 255);
+  font-size: 65%;
+  padding: 2px;
+  margin-left: 2px;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.sublist {
+  list-style: outside url(https://findicons.com/files/icons/1620/crystal_project/22/next.png);
+  font-size: 15px;
+  background-color: chocolate;
+  color: aqua;
+  font-weight: normal;
+  margin: 10px;
+  padding: 10px 10px 10px 40px;
+}
+
+.list-catalog {
+  list-style: outside url(https://findicons.com/files/icons/1156/fugue/16/fire_big.png);
+  font-size: 20px;
+  background-color: blueviolet;
+  color: aliceblue;
+  font-weight: 600;
+  padding: 10px 10px 10px 50px;
+}
+
+.link-gallery a {
+  color: rgb(229, 26, 26);
+}
+
+.bg-wallpaper-gallery {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(138, 34, 34);
+  background-image: url(../pages/photo/libra-justice-balanced-scale-symbol.png), url(../pages/photo/animfon.jpg);
+  background-size: 100px, 700px;
+  background-repeat: no-repeat, repeat;
+  background-position: 97% 45%, center;
+}
+
+.slide-gallery {
+  border: 20px solid rgb(72, 85, 204);
+  margin: 10px;
+}
+
+.slide-link {
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
+  text-decoration: none;
+}
+
+.slide-gallery:hover {
+  border: 20px solid transparent;
+  margin: 10px;
+}
+
+.container--gallery {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.sub-link {
+  color: rgb(237, 136, 5);
+  font-weight: 700;
+  transition: 0.5s;
+}
+
+.sub-link:hover {
+  color: rgb(239, 11, 251);
+}
+
+.return {
+  color: rgb(237, 136, 5);
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.return:hover {
+  color: rgb(239, 11, 251);
+}
+
+fieldset {
+  max-width: 500px;
+  margin: 25px auto;
+}
+
+input {
+  width: 100%;
+  padding: 10px 20px;
+}
+
+input[type="file"] {
+  padding: 0;
+}
+
+input[type="text"] {
+  text-transform: capitalize;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+}
+
+textarea {
+  width: 100%;
+  resize: vertical;
+  padding: 10px 20px;
+  min-height: 75px;
+  max-height: 33vh;
+}
+
+
+.button {
+  width: 100%;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  color: crimson;
+  background-color: black;
+  border: 2px solid;
+  margin: 5px 5px 5px 0px;
+}
+
+.button:hover {
+  background-color: crimson;
+  color: black;
+}
+
+legend {
+  color: rgb(255, 255, 255);
+  background-color: rgb(26, 174, 224);
+  border: solid 2px black;
+  padding: 2px 5px;
+}
+
+.form-style {
+  background: rgb(144, 60, 12);
+  background: linear-gradient(263deg, rgba(144, 60, 12, 0.8354692218684349) 0%, rgba(9, 9, 121, 0.9363095580028886) 39%, rgba(0, 212, 255, 1) 100%);
+}
+
+
+.input-name {
+  text-transform: capitalize;
+}
+
+.anchor {
+  position: relative;
+}
+
+.anchor>span {
+  position: absolute;
+  top: -130px;
+}
+
+.form-group {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.label-form {
+  margin-bottom: 0.3em;
+  display: inline-block;
+  font-weight: 600;
+}
